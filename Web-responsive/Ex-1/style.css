@@ -1,0 +1,32 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.grid-items{
+  background-color: cyan;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .grid-container{
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 768px){
+  .grid-container{
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container{
+    grid-template-columns: auto;
+  }
+}
